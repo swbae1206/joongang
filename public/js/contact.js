@@ -25,7 +25,7 @@ sendMessage.addEventListener("click", function () {
     return
   }
 
-  fetch("http://15.165.20.67:3500/api/sendmail", {
+  fetch("http://localhost:3500/api/sendmail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 /* COMMON */
 
 * {
@@ -160,7 +161,6 @@ nav .navigation ul li a.lang:hover {
 .swiper-slide h2 {
   color: #fff;
   font-size: 2.6rem;
-  letter-spacing: 2px;
   word-break: keep-all;
 }
 
@@ -173,7 +173,7 @@ nav .navigation ul li a.lang:hover {
 
 #features .fea-base {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5rem;
 }
 
@@ -205,7 +205,7 @@ nav .navigation ul li a.lang:hover {
 /* PRODUCT & FACILITIES */
 
 #product-brief {
-  padding: 80px 15vw 0 15vw;
+  padding: 80px 15vw 0vw 15vw;
 }
 
 .product-brief-base {
@@ -625,13 +625,20 @@ scroll-margin-top: 100px;
   align-items: start;
 }
 
+#history .history-box .tens-box {
+  color: #bc91fc;
+  border-top: 15px solid rgb(239, 234, 251);
+  position: relative;
+}
+
 #history .history-box .tens {
+  font-family: N;
   text-align: center;
-  font-size: 30px;
-  background-color: rgba(13, 57, 253, 0.496);
+  font-size: 45px;
   padding: 10px;
-  font-weight: 700;
-  color: #fff;
+  font-weight: 900;
+  position: absolute;
+  top: -45px;
 }
 
 #history .history-box .contents-base {
@@ -1241,7 +1248,7 @@ scroll-margin-top: 100px;
   /* FEATURES */
 
   #features .fea-base {
-    grid-template-columns: auto auto auto;
+    gap: 40px;
   }
 
   /* VIDEO */
@@ -1294,7 +1301,7 @@ scroll-margin-top: 100px;
   /* PRODUCT & FACILITIES */
 
   .product-brief-base {
-    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
 
   #history-brief {
@@ -1351,6 +1358,10 @@ scroll-margin-top: 100px;
     padding: 15px 20px;
   }
 
+  .product-brief-base {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 
   /* VIDEO */
 
