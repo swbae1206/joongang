@@ -1,6 +1,6 @@
 const sendMessage = document.querySelector(".sendMessage");
 
-sendMessage.addEventListener("click", function () {
+sendMessage.addEventListener("click", asynbc function () {
   const company = document.getElementById("company");
   const name = document.getElementById("name");
   const email = document.getElementById("email");
@@ -25,7 +25,7 @@ sendMessage.addEventListener("click", function () {
     return
   }
 
-  fetch("http://localhost:3500/api/sendmail", {
+  await fetch("http://13.209.163.54:3500/api/sendmail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

@@ -23,7 +23,7 @@ router.post("/", async (req, res) => {
     const mailOptions = {
       from: "inquiry@e-joongang.com",
       to: "joongang@e-joongang.com",
-      subject: email + " 고객이 (주)엠에스밴드에 문의 메일을 보냈습니다.",
+      subject: email + " 고객이 (주)중앙기계공업에 문의 메일을 보냈습니다.",
       html: `
         <div style="margin-bottom: 15px;"><p style="margin: 0;">${name}(${email})님이 제품 및 기술에 대해 아래와 같이 문의해 왔습니다.</p></div>
         <div style="display: grid; gap: 3px; width: 600px; box-sizing: border-box;">
