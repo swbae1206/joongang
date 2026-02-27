@@ -1,6 +1,6 @@
 const sendMessage = document.querySelector(".sendMessage");
 
-sendMessage.addEventListener("click", asynbc function () {
+sendMessage.addEventListener("click", async function () {
   const company = document.getElementById("company");
   const name = document.getElementById("name");
   const email = document.getElementById("email");
